@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'NanumSquareNeo';
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* 탑 띠지 */
+.marquee1{
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+}
+.marquee1 div{
+    width: 200%;
+    height: 60px;
+    background: url(images/top_deco.png) repeat-x;
+    position: absolute;
+    animation: marquee 30s linear infinite;
+}
+@keyframes marquee{
+    0%{left: 0;}
+    100%{left: -100%;}
+}
+
+#con1_wrap{
+	background: url(./images/main_back1.png) no-repeat;
+	width: 100%;
+	height: 876px;
+}
+
+#nav{
+	width: 1000px;
+	margin-left: 300px;
+	padding-top: 20px;
+	display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	justify-content: space-between;
+}
+
+#nav ul{
+	display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#nav ul li{
+	margin-left: 80px;
+}
+
+#main_con1{
+	position: relative;
+	overflow: hidden;
+}
+
+#main_con1 img{
+	width: 100%;
+}
+
+.con1_coolkids{
+	position: absolute;
+	left: 50%;
+	top: 65%;
+	margin-left: 300px;
+}
+
+/*움직이는 메뉴버튼*/
+.m_nav{
+	position: relative;
+}
+input[id="menuicon"]{
+	display:none;
+}
+.menu_star{
+	background: url(./images/menu_star.png) no-repeat;
+	width: 73px;
+	height: 73px;
+	position: absolute;
+	left: 60px;
+	top: 15px;
+}
+
+/*메뉴 아이콘 버튼 크기, 위치*/
+input[id="menuicon"]+label{
+	display:block;
+	width: 35px;
+	height: 25px;
+	position:relative;
+	z-index:2;
+	transition:all 0.5s;
+	cursor:pointer;
+	margin: 39px 79px;
+}
+
+/*메뉴 버튼 클릭했을 때 X버튼 색상*/
+input[id="menuicon"]:checked+label span{
+	background:#fff;
+}
+
+/*메뉴 세줄 버튼*/
+input[id="menuicon"]+label span{
+	display:block;
+	position:absolute;
+	width:100%;
+	height:5px;
+	border-radius:30px;
+	background:#eddc67;
+	transition:all 0.5s;
+}
+input[id="menuicon"]+label span:nth-child(1){
+	top:0;
+}
+input[id="menuicon"]+label span:nth-child(2){
+	top:50%;
+	transform:translateY(-50%);
+}
+input[id="menuicon"]+label span:nth-child(3){
+	bottom:0;
+}
+
+/*메뉴 버튼 클릭했을 때 세줄버튼에서 X버튼으로 바뀌는 모습*/
+input[id="menuicon"]:checked+label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked+label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked+label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+
+
+/*메뉴 창*/
+.sidebar{
+	width:50%;
+	height:100%;
+	background:#41624c;
+	position:fixed;
+	top: 0;
+	right: -100%;
+	z-index:1;
+	transition:all 0.5s;
+}
+input[id="menuicon"]:checked+label+div{
+	right:0;
+}
+
+.con2_img{
+	display: block;
+	margin: auto;
+	padding-top: 80px;
+}
+
+/* 갤러리 센터 꾸미기 */
+.gallery-center {
+	width: 100%;
+	height: 100%;
+	margin: 50px auto;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.gallery-center_inner {
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery-center .swiper-slide a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(./images/con-1.png) no-repeat left bottom;
+	background-size: 100%;
+}
+
+.gallery-center .swiper-slide img {
+	display: block;
+	width: 86%;
+	margin: auto;
+	padding: 50px 0 30px;
+}
+
+.gallery-center .swiper-wrapper{
+	align-items: flex-end;
+}
+
+/* con3 띠지 */
+.marquee2{
+    height: 139px;
+    overflow: hidden;
+    position: relative;
+}
+.marquee2 div{
+    width: 200%;
+    height: 139px;
+    background: url(./images/con3_deco.png) repeat-x;
+    position: absolute;
+    animation: marquee 20s linear infinite;
+}
+@keyframes marquee{
+    0%{left: 0;}
+    100%{left: -100%;}
+}
