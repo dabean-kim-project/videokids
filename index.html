@@ -25,11 +25,23 @@
     <div id="nav">
       <a href="#"><img src="./images/header_logo.png" alt="video kids logo"></a>
 
-      <ul>
-        <li><a href="#"><img src="./images/nav1.png" alt="about"></a></li>
-        <li><a href="#"><img src="./images/nav2.png" alt="이용안내"></a></li>
-        <li><a href="#"><img src="./images/nav3.png" alt="현재상영작"></a></li>
-        <li><a href="#"><img src="./images/nav4.png" alt="store"></a></li>
+      <ul class="nav_in">
+        <li><a href="#">
+          <img src="./images/nav1.png" alt="about" class="b_hover">
+          <img src="./images/nav1_hover.png" alt="about" class="hover">
+        </a></li>
+        <li><a href="#">
+          <img src="./images/nav2.png" alt="이용안내" class="b_hover">
+          <img src="./images/nav2_hover.png" alt="이용안내" class="hover">
+        </a></li>
+        <li><a href="#">
+          <img src="./images/nav3.png" alt="현재상영작" class="b_hover">
+          <img src="./images/nav3_hover.png" alt="현재상영작" class="hover">
+        </a></li>
+        <li><a href="#">
+          <img src="./images/nav4.png" alt="store" class="b_hover">
+          <img src="./images/nav4_hover.png" alt="store" class="hover">
+        </a></li>
       </ul>
 
       <!-- 슬라이드 메뉴 -->
@@ -43,9 +55,10 @@
         </label>
         <div class="sidebar">
           <ul>
-            <li><a href="#">메뉴1</a></li>
-            <li><a href="#">메뉴2</a></li>
-            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">예매하기</a></li>
+            <li><a href="#">STORE</a></li>
           </ul>
         </div>
       </div>
@@ -54,9 +67,10 @@
 
     <div id="main_con1">
       <img src="./images/con1_video.png" alt="con1_video">
+      <img class="con1_coolkids" src="./images/coolkids1.png" alt="coolkids1">
     </div>
 
-    <img class="con1_coolkids" src="./images/coolkids1.png" alt="coolkids1">
+
   </div>
 
 
@@ -101,6 +115,7 @@
     </div>
   </div>
 
+  <!-- con3 -->
   <!-- con3 띠지 -->
   <div class="marquee2">
     <div></div>
@@ -112,18 +127,27 @@
     <div class="table1">
       <div class="table2">
         <h1>비디오 키즈 상영 시간표</h1>
-        <p><span>12월 13일 - 12월 19일</span></p>
+        <p class="date"><span>12월 13일 - 12월 19일</span></p>
 
-        <table>
+        <table border="1">
           <tr>
             <td>시간</td>
-            <td>12.13(수)</td>
-            <td>12.14(목)</td>
-            <td>12.15(금)</td>
-            <td>12.16(토)</td>
-            <td>12.17(일)</td>
-            <td>12.18(월)</td>
-            <td>12.19(화)</td>
+            <th>12.13(수)</th>
+            <th>12.14(목)</th>
+            <th>12.15(금)</th>
+            <th>12.16(토)</th>
+            <th>12.17(일)</th>
+            <th>12.18(월)</th>
+            <th>12.19(화)</th>
+            <th rowspan="9" class="th">
+              비디오 키즈's PICK!<br>
+              『 이 영화 어때? 』<br>
+              12월 셋 째주····<br>
+              비디오 키즈가 <br>
+              추천하는 영화! <br>
+              연말을 맞아 <br>
+              크리스마스 기획전 준비
+            </th>
           </tr>
 
           <tr>
@@ -165,7 +189,7 @@
               <p>
                 <span>11:50</span><br>
                 백남준:<br>
-                달은 가장 오래된TV            
+                달은 가장 오래된 TV
               </p>
             </td>
             <td>
@@ -197,7 +221,7 @@
             <td>
               <p>
                 <span>01:30</span><br>
-                매드맥스:분노의 도로           
+                매드맥스:분노의 도로
               </p>
             </td>
             <td></td>
@@ -210,8 +234,8 @@
             <td></td>
             <td>
               <span>01:00</span><br>
-                블루 자이언트<br>
-                DOLBY ATMOS
+              블루 자이언트<br>
+              DOLBY ATMOS
             </td>
             <td>
               <p>
@@ -290,18 +314,19 @@
               </p>
             </td>
             <td></td>
+            <td>
+              <p>
+                <span>06:00</span>
+                캐롤<br>
+                크리스마스 기획전
+              </p>
+            </td>
             <td></td>
             <td>
               <p>
-                <span>04:00</span><br>
-                사랑은 낙엽을 타고
-              </p>
-            </td>
-            <td>
-              <p>
-                <span>04:00</span><br>
-                윤희에게<br>
-                크리스마스 기획전
+                <span>06:30</span><br>
+                백남준:<br>
+                달은 가장 오래된 TV
               </p>
             </td>
             <td>
@@ -311,11 +336,180 @@
               </p>
             </td>
           </tr>
+
+          <tr>
+            <td><img src="./images/pm8.png" alt="pm8"></td>
+            <td>
+              <p>
+                <span>08:30</span>
+                캐롤<br>
+                크리스마스 기획전
+              </p>
+            </td>
+            <td></td>
+            <td>
+              <p>
+                <span>08:00</span><br>
+                카사블랑카
+              </p>
+            </td>
+            <td>
+              <p>
+                <span>08:30</span><br>
+                매드맥스:분노의 도로
+              </p>
+            </td>
+            <td>
+              <p>
+                <span>08:00</span><br>
+                딸에 대하여
+              </p>
+            </td>
+            <td></td>
+            <td>
+              <p>
+                <span>08:10</span><br>
+                딸에 대하여
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img src="./images/pm10.png" alt="pm10"></td>
+            <td></td>
+            <td>
+              <p>
+                <span>10:00</span><br>
+                헤어질 결심
+              </p>
+            </td>
+            <td></td>
+            <td>
+              <p>
+                <span>10:50</span><br>
+                3일의 휴가
+              </p>
+            </td>
+            <td>
+              <p>
+                <span>10:30</span><br>
+                괴물
+              </p>
+            </td>
+            <td>
+              <p>
+                <span>10:00</span><br>
+                헤어질 결심
+              </p>
+            </td>
+            <td>
+          </tr>
+
         </table>
+
+        <img src="./images/con3_deco1.png" alt="con3_deco1" class="con3_img1">
+        <img src="./images/con3_deco2.png" alt="con3_deco2" class="con3_img2">
+        <img src="./images/con3_deco3.png" alt="con3_deco3" class="con3_img3">
+        <img src="./images/con3_coolkids.png" alt="con3_coolkids" class="con3_img4">
+        <img src="./images/con3_pur_star.png" alt="con3_pur_star" class="con3_img5">
       </div>
     </div>
   </div>
 
+  <!-- con3 띠지 -->
+  <div class="marquee3">
+    <div></div>
+  </div>
+  <!-- con3 띠지 -->
+  <!-- con3 끝 -->
+
+  <!-- con4 -->
+  <div id="con4_wrap">
+    <img src="./images/con4_bg2.png" alt="이용안내" class="con4_infoimg">
+    <div class="con4_img">
+      <img src="./images/con4_guide.png" alt="cno4_guide">
+      <img src="./images/con4_deco1.png" alt="con4_deco1">
+      <img src="./images/con4_fee.png" alt="con4_fee">
+      <img src="./images/con4_deco2.png" alt="con4_deco2">
+    </div>
+  </div>
+  <!-- con4 끝 -->
+
+  <!-- con5 -->
+  <div id="con5">
+    <img src="./images/con5_img.png" alt="My only friend through teenage nights!" class="con5_img">
+    <br>
+    <h2 class="h2">비디오 영화를 보며 자라난<br>
+      <br>
+      어른들을 위한 공간!
+    </h2>
+    <br>
+    <h2 class="h3">
+      상업 영화부터 독립 영화까지,<br>
+      <br>
+      옛날 비디오 대여점에서 골라서 보던 것 처럼
+    </h2>
+    <br>
+    <h2 class="h4">
+      '돈이 되는' 영화만이 아닌<br>
+      <br>
+      '좋아하는' 영화를 관람하세요!
+    </h2>
+  </div>
+  <!-- con5 끝 -->
+
+  <!-- footer -->
+  <footer>
+    <div class="footer_in">
+      <img src="./images/footer_theend.png" alt="the end">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">이용안내</a></li>
+        <li><a href="#">현재 상영작</a></li>
+        <li><a href="#">스토어</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+      </ul>
+    
+
+    <div class="footer_inin">
+      <p class="p1">
+        Telephone<br>
+        Fax<br>
+        Videokids<br>
+        Address<br>
+        Representative<br>
+        Business number<br>
+      </p>
+      <p class="p2">
+        070-9391-6236<br>
+        02-093-6236<br>
+        @gmail.com<br>
+        서울특별시 서대문구 연희로 8길 18<br>
+        김다빈<br>
+        110-05-99847<br>
+      </p>
+    </div>
+
+    <p>Copyright ⓒ 2024 VIDEO KIDS All rights reserved</p>
+
+    <ul>
+      <li>
+        <a href="#"><img src="./images/footer_insta.png" alt="insta_icon"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./images/footer_x.png" alt="x_icon"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./images/footer_logo.png" alt="logo"></a>
+      </li>
+    </ul>
+  </div>
+  </footer>
+  <!-- footer 끝 -->
 
 
 
