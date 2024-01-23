@@ -366,7 +366,8 @@ span{
 
 /* con4 */
 #con4_wrap{
-	background: url(./images/con4_bg1.png) repeat-y;
+	background: url(./images/con4_bg1.png) repeat-y center;
+	background-size: cover;
 	position: relative;
 	z-index: -2;
 }
