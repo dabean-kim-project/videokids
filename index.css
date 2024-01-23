@@ -31,7 +31,7 @@ a {
 .marquee1 div{
     width: 200%;
     height: 60px;
-    background: url(images/top_deco.png) repeat-x;
+    background: url(./images/top_deco.png) repeat-x;
     position: absolute;
     animation: marquee 30s linear infinite;
 }
