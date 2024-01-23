@@ -184,6 +184,10 @@ input[id="menuicon"]:checked+label+div{
 	right:0;
 }
 
+.sidebar ul a:hover{
+	background: url(./images/menu_hover.png) no-repeat top;
+}
+
 .con2_img{
 	height: auto;
 	display: block;
